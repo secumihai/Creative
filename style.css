@@ -1,9 +1,12 @@
 @import url(reset.css);
 
+/* GENERAL */
 body
 {
-	  font: 14px/normal Arial, Helvetica, sans-serif; 
+	  font: 14px/1.5 Arial, Helvetica, sans-serif; 
 	  color : 	#000000;
+	  text-align: justify;
+
 }
 
 a
@@ -13,15 +16,31 @@ a
 	text-decoration: none;
 }
 
+
 a:hover, #menu ul li:first-child a{
 	color: #333300;
 }
 
+h2{
+	text-transform: uppercase;
+	font-size: 16px;
+	font-weight: bold;
+	border-bottom: 4px solid #000000;
+	padding-bottom: 5px;
+	margin-bottom: 10px;
+	padding-left: 20px;
+}
+cite{
+	font-style: italic;
+}
 
+/* TOP LINE */
 #top-line{
 	height: 20px;
-	background: #000000;
+	background: #000000 no-repeat;
 }
+
+/* WRAPER */
 
 #wraper
 {
@@ -30,19 +49,26 @@ a:hover, #menu ul li:first-child a{
 	margin-top:10px;
 }
 
+/* HEADER-MENU */
+
 #header-menu
 {
-	
+	border-bottom: 1px solid #C3C3BC;
+	overflow: hidden;
+	margin-bottom: 20px;
+	padding-bottom: 20px;
 
 }
 
-
+/* LOGO */
 #logo
 {
 	width:183px;
 	height: 100px;
 	float: left;
 }
+
+/* MENU */
 
 #menu
 {
@@ -52,6 +78,113 @@ a:hover, #menu ul li:first-child a{
 #menu ul li{
 	float: left;
 	padding-left: 35px;
-	margin-top: 25px; 
+	margin-top: 40px; 
 }
 
+/* HEADER IMAGE */
+
+#header-image{
+	width:960px;
+	height: 380px;
+	background: url("images/header-image.jpg") no-repeat;
+	position: relative;
+	border-bottom: 1px solid #C3C3BC;
+	padding-bottom: 20px;
+	margin-bottom: 20px;
+}
+
+#portofolio{
+	position: absolute;
+	width: 450px;
+	height: 40px;
+	background: #1E1F1F;
+	left: 30px;
+	bottom: 40px;
+
+}
+
+
+.line{
+	text-transform: uppercase;
+	color: #BCC3C3;
+	display: inline-block;
+	margin-top: 12px;
+	margin-left: 10px;
+}
+
+.line:first-child{
+	margin-right: 90px;
+}
+
+.line a:hover{
+	color: #C3C3BC;
+}
+
+
+/* CONTENT */
+
+.container{
+	border-bottom: 1px solid #C3C3BC;
+	overflow: hidden;
+	margin-bottom: 20px;
+}
+
+.content{
+	width: 300px;
+	float: left;
+	position: relative;
+	margin-right: 30px;
+}
+
+.content:last-child{
+	margin-right: 0;
+}
+
+.content img{
+	position: absolute;
+	left 0;
+	top: 8px;
+}
+
+.content p{
+	margin-bottom: 25px;
+}
+
+.content li{
+	margin-bottom: 10px;
+}
+
+/* PORTOFOLIO */
+
+#portoflio{
+	padding-bottom: 20px;
+	margin-bottom: 20px;
+	border-bottom: 1px solid #C3C3BC;
+	overflow: hidden;
+
+}
+.portofolio-image{
+	width: 215px;
+	height: 135px;
+	float:left;
+	margin-right: 33px;
+	position: relative;
+}
+
+.portofolio-image:last-child{
+	margin-right: 0;
+	
+}
+
+.view{
+	background: #ff6600;
+	width: 60px;
+	height: 30px;
+	position: absolute;
+	right:0;
+	bottom: 0;
+}
+
+.view a{
+	color: #000000;
+}
